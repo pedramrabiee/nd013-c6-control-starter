@@ -9,30 +9,11 @@
 
 class PID {
 public:
-
-   /**
-   * TODO: Create the PID class
-   **/
-
-    /*
-    * Errors
-    */
-
-    /*
-    * Coefficients
-    */
-
-    /*
-    * Output limits
-    */
-  
-    /*
-    * Delta time
-    */
-
-    /*
-    * Constructor
-    */
+    double error;
+    double Kp, Ki, Kd,;    
+    double output_lim_max, output_lim_min;    
+    double dt;
+    double p_err, d_err, i_err;
     PID();
 
     /*
@@ -45,9 +26,7 @@ public:
     */
     void Init(double Kp, double Ki, double Kd, double output_lim_max, double output_lim_min);
 
-    /*
-    * Update the PID error variables given cross track error.
-    */
+
     void UpdateError(double cte);
 
     /*

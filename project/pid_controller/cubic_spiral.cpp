@@ -28,7 +28,7 @@ bool CubicSpiral::GenerateSpiral(const PathPoint& start, const PathPoint& end) {
   set_start_point(start);
   set_end_point(end);
 
-  // starting p[oint
+  // starting point
   double x_s = start_point().x;
   double y_s = start_point().y;
   double theta_s = std::fmod(start_point().theta, s_two_pi_);
